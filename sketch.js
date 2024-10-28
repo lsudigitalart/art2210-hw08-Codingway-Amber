@@ -16,15 +16,7 @@ function draw() {
 }
 
 function smolBoi() {
-  // push();
-  // noFill();
-  // // translate(245, 150)
-  // strokeWeight(1);
-  // stroke(232, 74, 116);
-  // curve(5, 26, mouseX, mouseY, 73, 61, 15, 65);
-  // pop();
-  
-  // Body
+  // Head
   push();
   strokeWeight(.7);
   translate(19, 19);
@@ -33,7 +25,7 @@ function smolBoi() {
   rect(0, 0, 115, 75);
   pop();
 
-  // Face
+  // Screen
   push();
   strokeWeight(.7);
   translate(48, 39);
@@ -42,5 +34,31 @@ function smolBoi() {
   rect(0, 0, 118, 75);
   pop();
 
+  // Right Eye
+  push();
+  noStroke()
+  translate(157, 117);
+  scale(.7);
+  fill(245, 255, 5);
+  rect(0, 0, 70);
+  pop();
+
+  // Left Eye
+  push();
+  noStroke()
+  translate(293, 117);
+  scale(.7);
+  fill(245, 255, 5);
+  rect(0, 0, 70);
+  pop();
+
+  // Mouth
+  push();
+  noStroke()
+  translate(143, 204);
+  scale(.65);
+  fill(245, 255, 5);
+  rect(0, 0, 70);
+  pop();
 
 }
