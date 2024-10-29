@@ -28,6 +28,7 @@ function smolBoi() {
   // Screen
   push();
   strokeWeight(.7);
+  stroke(16, 77, 26);
   translate(48, 39);
   scale(3.4);
   fill(48, 169, 68);
@@ -40,7 +41,17 @@ function smolBoi() {
   translate(157, 117);
   scale(.7);
   fill(245, 255, 5);
-  rect(0, 0, 70);
+  rect(0, 0, 70, 60);
+  pop();
+
+  // Right Glow
+  push();
+  strokeWeight(3)
+  stroke(201, 139, 54)
+  translate(157, 117);
+  scale(.3);
+  fill(255);
+  rect(0, 0, 70, 60);
   pop();
 
   // Left Eye
@@ -49,16 +60,54 @@ function smolBoi() {
   translate(293, 117);
   scale(.7);
   fill(245, 255, 5);
-  rect(0, 0, 70);
+  rect(0, 0, 70, 60);
+  pop();
+
+  // Left Glow
+  push();
+  strokeWeight(3)
+  stroke(201, 139, 54)
+  translate(293, 117);
+  scale(.3);
+  fill(255);
+  rect(0, 0, 70, 60);
   pop();
 
   // Mouth
   push();
   noStroke()
-  translate(143, 204);
+  translate(168, 204);
   scale(.65);
   fill(245, 255, 5);
-  rect(0, 0, 70);
+  rect(0, 0, 250, 50);
+  pop();
+
+  // Right Cheek
+  push();
+  noStroke()
+  translate(135, 177);
+  scale(.5);
+  fill(245, 255, 5);
+  rect(0, 0, 65, 55);
+  pop();
+
+  // Left Cheek
+  push();
+  noStroke()
+  translate(330, 177);
+  scale(.5);
+  fill(245, 255, 5);
+  rect(0, 0, 65, 55);
+  pop();
+
+  // Button
+  push();
+  strokeWeight(3)
+  stroke(201, 139, 54)
+  translate(453.5, 280);
+  scale(.3);
+  fill(245, 255, 5);
+  rect(0, 0, 65, 55);
   pop();
 
 }
